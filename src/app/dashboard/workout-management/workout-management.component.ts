@@ -121,7 +121,6 @@ export class WorkoutManagementComponent implements OnInit {
   }
 
   onKeyPress(event: KeyboardEvent) {
-    // Implement search functionality if needed
   }
 
   onAddClick() {
