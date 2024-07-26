@@ -125,7 +125,7 @@ export class WorkoutManagementComponent implements OnInit {
   }
 
   onAddClick() {
-    this.router.navigate(['/manage-workout']);
+    this.router.navigate(['/workout-form']);
   }
 
 }
