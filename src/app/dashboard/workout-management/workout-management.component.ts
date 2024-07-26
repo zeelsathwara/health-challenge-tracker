@@ -73,6 +73,32 @@ export class WorkoutManagementComponent implements OnInit {
   constructor(private router: Router, private workoutService: WorkoutService) {}
 
   ngOnInit(): void {
+    this.userData = [
+      {
+        id: 1,
+        user_name: 'John Doe',
+        workouts: [
+          { workout_type: 'Running', workout_minutes: 30 },
+          { workout_type: 'Cycling', workout_minutes: 45 }
+        ]
+      },
+      {
+        id: 2,
+        user_name: 'Jane Smith',
+        workouts: [
+          { workout_type: 'Swimming', workout_minutes: 60 },
+          { workout_type: 'Running', workout_minutes: 20 }
+        ]
+      },
+      {
+        id: 3,
+        user_name: 'Mike Johnson',
+        workouts: [
+          { workout_type: 'Yoga', workout_minutes: 50 },
+          { workout_type: 'Cycling', workout_minutes: 40 }
+        ]
+      }
+    ];
     this.loadWorkouts();
   }
 
