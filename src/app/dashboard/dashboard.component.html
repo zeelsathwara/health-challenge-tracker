@@ -1,0 +1,8 @@
+<div class="dashboard-container">
+    <div class="tile" *ngFor="let option of dashboardOptions">
+      <div class="tile-content" [routerLink]="option.route">
+        <i class="fas fa-{{ option.icon }}"></i><br>
+        <h3>{{ option.title }}</h3>
+      </div>
+    </div>
+</div>

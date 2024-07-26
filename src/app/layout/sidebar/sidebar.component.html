@@ -1,0 +1,38 @@
+<div class="sidebar" [ngClass]="collapsed ? 'sidebar-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo">
+            <img src="\assets\fyleLogo.jpg" alt="" width="40">
+        </button>
+    </div>
+    <div class="scrollwrap scrollwrap_delayed">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item" *ngFor="let data of sideData">
+                <a class="sidebar-nav-link" (click)="handleClick(data)"
+                    *ngIf="data.items && data.items.length > 0"
+                    [ngClass]="getActiveClass(data)"
+                >
+                    <i class="sidebar-link-icon" [class]="data.icon"></i>
+                    <span class="sidebar-link-text" @fadeInOut *ngIf="collapsed">
+                        {{data.label}}
+                    </span>
+                    <i *ngIf="data.items && collapsed" class="menu-collapse-icon"
+                        [ngClass]="!data.expanded ? 'fal fa-angle-right' : 'fal fa-angle-down'"
+                    ></i>
+                </a>
+    
+                <a class="sidebar-nav-link" 
+                    *ngIf="!data.items || (data.items && data.items.length === 0)"
+                    [routerLink]="[data.routeLink]" 
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}"
+                    (click)="shrinkItems(data)"
+                    >
+                    <i class="sidebar-link-icon" [class]="data.icon"></i>
+                    <span class="sidebar-link-text" @fadeInOut>
+                        {{data.label}}
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

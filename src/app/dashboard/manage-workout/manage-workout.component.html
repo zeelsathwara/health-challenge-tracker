@@ -1,0 +1,67 @@
+<form [formGroup]="formWorkout" (ngSubmit)="saveConfigType()">
+  <section class="manage-section ats-table-css">
+    <div class="container-fluid">
+      <div class="myworkout">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-6">
+            <div class="inneraddedit-title">
+              <h6>{{pageTitle}} Workout</h6>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6">
+            <div class="back-button button-right">
+              <a routerLink="/workout-list"><i class="fa fa-long-arrow-alt-left"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="field-sec">
+              <label for="user_name">User Name<span class="text-danger">*</span></label>
+              <input type="text" formControlName="user_name" class="form-control" placeholder="User Name">
+              <div *ngIf="formWorkout.get('user_name')?.invalid && (formWorkout.get('user_name')?.dirty || formWorkout.get('user_name')?.touched)" class="errormsg">
+                <span *ngIf="formQuote.get('user_name')?.errors?.required">{{'user_name_required'}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="field-sec">
+              <label for="workout_type">Workout Type<span class="text-danger">*</span></label>
+                <ng-multiselect-dropdown
+                  formControlName="workout_type"
+                  [placeholder]="'Select Workout'"
+                  [settings]="dropdownSettings1"
+                  [data]="dropdownList1"
+                >
+                </ng-multiselect-dropdown>
+                <div *ngIf="formWorkout.get('workout_type')?.invalid && (formWorkout.get('workout_type')?.dirty || formWorkout.get('workout_type')?.touched)" class="errormsg">
+                  <span>{{'workout_type_required' | translate}} </span>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="field-sec">
+              <label for="workout_minutes">Workout Minutes<span class="text-danger">*</span></label>
+              <input type="number" formControlName="workout_minutes" class="form-control" placeholder="Workout Minutes">
+              <div *ngIf="formWorkout.get('workout_minutes')?.invalid && (formWorkout.get('workout_minutes')?.dirty || formWorkout.get('workout_minutes')?.touched)" class="errormsg">
+                <span *ngIf="formQuote.get('workout_minutes')?.errors?.required">{{'workout_minutes_required' | translate}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-12">
+            <div class="addcancel-buttons">
+              <button type="submit" class="add-button">Add Workout</button>
+              &nbsp;
+              <button (click)="onCancelClick()" class="secondary-button">Cancel</button>
+            </div>
+          </div>
+
+        </div>
+      </div> 
+    </div>
+  </section>
+</form>

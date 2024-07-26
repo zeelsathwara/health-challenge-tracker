@@ -1,0 +1,41 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .tile {
+    width: calc(33% - 20px); 
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    color: #495057;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+    background-color: #495057;
+    color: #fff;
+  }
+  
+  .tile-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tile h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .tile i {
+    font-size: 64px; 
+    margin-bottom: 10px;
+    display: block; 
+    margin: 0 auto;
+  }

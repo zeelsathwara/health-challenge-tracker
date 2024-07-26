@@ -1,0 +1,124 @@
+.searchadd-section .row {
+    display: flex;
+}
+
+.searchadd-section .col-6 {
+    flex: 1;
+    /* padding-right: 5px;  */
+}
+
+.searchadd-section .form-group.has-search {
+    position: relative;
+    width: 50%; 
+    line-height: 25px;
+}
+
+.searchadd-section .form-control {
+    margin-left: 6px;
+    padding-left: 40px; 
+    width: 100%;
+    height: 34px;
+}
+
+.searchadd-section .form-control-feedback {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    color: #000; 
+    pointer-events: none;
+}
+
+.searchadd-section .button-div {
+    margin-top: 7px;
+    text-align: right;
+    width: 100%; 
+}
+
+.searchadd-section .site-button {
+    background: #263238; 
+    color: white; 
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 20px;
+    border: 1px solid #263238;
+    text-decoration: none;
+}
+
+.searchadd-section .site-button:hover {
+    background: white; 
+    color: #263238;
+    border: 1px solid #263238;
+    text-decoration: none;
+}
+
+::ng-deep.ag-cell-wrapper {
+    display: block !important;
+}
+
+/* body section */
+.body-section {
+    position: relative;
+    top: 0;
+    left: 85px;
+    width: calc(100% - 95px);
+    transition: all 0.5s ease;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .ats-table-css .ag-root-wrapper {
+    border: none !important;
+    border-radius: 5px;
+  }
+  
+  .ats-table-css .ag-header {
+    background: transparent;
+  }
+  
+  .ats-table-css .card {
+    border: none;
+    height: calc(100vh - 30%) !important;
+  }
+  
+  .ats-table-css .ag-row-hover:not(.ag-full-width-row)::before,
+  .ats-table-css .ag-row-hover.ag-full-width-row.ag-row-group::before {
+    display: none;
+  }
+  
+  .ats-table-css .ag-row-odd {
+    background-color: #ffff;
+  }
+  
+  .ats-table-css .ag-ltr .ag-cell {
+    display: flex;
+    padding-top: 0 !important;
+  }
+  
+  .ats-table-css .ag-header-cell-text,
+  .ats-table-css .ag-cell-value {
+    /* color: #274964; */
+    color: #212121;
+  }
+  
+  .action-btn {
+    background: #f9f9f9;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    /* color: #274964 !important; */
+    color: #008285 !important;
+    margin-right: 5px;
+    display: inline !important;
+  }
+  
+  .action-btn:hover {
+    /* background-color: #274964; */
+    background-color: #008285;
+    color: #fff !important;
+  }

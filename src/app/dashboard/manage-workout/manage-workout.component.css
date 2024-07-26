@@ -1,0 +1,170 @@
+.manage-section {
+  margin-top: 20px;
+}
+
+.field-sec {
+  margin-bottom: 20px;
+}
+
+.errormsg {
+  color: red;
+  font-size: 1rem;
+}
+
+.inneraddedit-title h6 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  text-align: right;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* add contractor css */
+.manage-section {
+position: relative;
+top: 0;
+/* left: 85px; */
+width: calc(100%);
+transition: all .5s ease;
+z-index: 2;
+background: #fff;
+border-radius: 5px;
+margin: 10px 0;
+padding: 10px 0px;
+}
+
+.back-button a {
+background-color: #263238;
+color: #fff !important;
+padding: 9px 15px;
+display: inline-block;
+border-radius: 5px;
+line-height: 1.2;
+-o-transition: all 0.6s ease-in-out;
+-webkit-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+border: 1px solid #263238;
+}
+
+.back-button a:hover {
+background-color: #ecf6fe;
+color: #263238 !important;
+border: 1px solid #263238;
+}
+
+.inneraddedit-title {
+margin-top: 30px;
+/* color: #274964; */
+color: #212121;
+}
+
+.inneraddedit-title h6 {
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+margin-top: -15px;
+/* font-size: 20px;
+font-weight: 600; */
+}
+
+.field-sec input {
+font-size: 14px;
+color: #274964;
+}
+
+.field-sec label {
+font-size: 12px;
+font-weight: 700;
+/* color: #274964; */
+color: #212121;
+margin-bottom: 0px;
+text-transform: uppercase;
+}
+
+.field-sec {
+margin-top: 15px;
+}
+
+.addcancel-buttons {
+margin-top: 30px;
+}
+
+.field-sec .input-group {
+border: 1px solid #dcdcdc;
+border-radius: 5px;
+}
+
+.field-sec .input-group input {
+border: none;
+}
+
+.add-button,
+.secondary-button {
+font-size: 14px;
+background-color: #263238;
+padding: 10px 30px;
+display: inline-block;
+border-radius: 5px;
+color: #ffffff;
+border: 1px solid #263238;
+line-height: normal;
+-o-transition: all 0.6s ease-in-out;
+-webkit-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+cursor: pointer;
+font-weight: 500;
+}
+
+.add-button:hover,
+.secondary-button:hover {
+background-color: #ecf6fe;
+color: #263238 !important;
+border: 1px solid #263238;
+text-decoration: none;
+background-position: 100% 0;
+-o-transition: all 0.6s ease-in-out;
+-webkit-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+cursor: pointer;
+font-weight: 500;
+}
+
+.addcancel-buttons a {
+margin-right: 10px;
+}
+
+.addcancel-buttons a:last-child {
+margin-right: 0px;
+}
